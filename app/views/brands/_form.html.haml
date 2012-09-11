@@ -1,0 +1,22 @@
+= form_for @brand do |f|
+  - if @brand.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@brand.errors.count, "error")} prohibited this brand from being saved:"
+      %ul
+        - @brand.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :fb_user
+    = f.text_field :fb_user
+  .field
+    = f.label :brand
+    = f.text_field :brand
+  .field
+    = f.label :description
+    = f.text_field :description
+  .field
+    = f.label :tags
+    = f.text_field :tags
+  .actions
+    = f.submit 'Save'

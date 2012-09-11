@@ -1,0 +1,25 @@
+%h1 Listing brands
+
+%table
+  %tr
+    %th Fb user
+    %th Brand
+    %th Description
+    %th Tags
+    %th
+    %th
+    %th
+
+  - @brands.each do |brand|
+    %tr
+      %td= brand.fb_user
+      %td= brand.brand
+      %td= brand.description
+      %td= brand.tags
+      %td= link_to 'Show', brand
+      %td= link_to 'Edit', edit_brand_path(brand)
+      %td= link_to 'Destroy', brand, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Brand', new_brand_path

@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Fb user:
+  = @brand.fb_user
+%p
+  %b Brand:
+  = @brand.brand
+%p
+  %b Description:
+  = @brand.description
+%p
+  %b Tags:
+  = @brand.tags
+
+= link_to 'Edit', edit_brand_path(@brand)
+\|
+= link_to 'Back', brands_path
