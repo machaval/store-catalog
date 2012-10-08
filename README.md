@@ -21,6 +21,25 @@ Ventajas
 Las ventajas seran para los vendedores la posibilidad de cobrar con tarjeta de credito y la mejora en el posicionamiento de busqueda por un monto. 
 Para los compradores una lista confiable y concentrada de vendedores de facebook.
 
-Target
--
-Mujeres adineradas y con tiempo al pedo.
+
+Start the application
+=====================
+
+Requirements
+------------
+
+* git
+* Ruby 1.9.3
+* gems
+
+Clone project `git clone git@github.com:machaval/store-catalog.git`, cd into directory and run `bundle`.
+
+Create database with the following commands
+
+```
+rake db:setup
+rake db:migrate
+```
+
+Finally, to start the application just run `rails s` and open the browser at __http://localhost:3000__
+
