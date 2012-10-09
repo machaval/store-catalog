@@ -41,5 +41,9 @@ rake db:setup
 rake db:migrate
 ```
 
+Set environment settings
+
+`cp config/settings.yml.example config/settings.yml`
+
 Finally, to start the application just run `rails s` and open the browser at __http://localhost:3000__
 

@@ -1,0 +1,8 @@
+default: &default
+  :domain: 'http://localhost:3000'
+  :facebook:
+    :app_id: #<api_id>
+    :app_secret: #<app_secret>
+
+development:
+  <<: *default
